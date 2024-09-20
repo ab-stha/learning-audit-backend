@@ -30,7 +30,7 @@ app.post('/chat', async (req, res)=>{
             }
         )
         
-    return res = response.json();
+        res.json(response.data);
     }
     catch (error){
         console.log('error: ', error)
